@@ -13,9 +13,9 @@ for(let i = 0; i < number.length; i++){
         let currentInput = display.innerHTML;
         let lastInput = currentInput[currentInput.length-1];
         console.log(flag);
-        if(flag = false){
+        if(flag === false){
             display.innerHTML += e.target.innerHTML
-        } else if(flag = true && lastInput === "+" || lastInput === "-" || lastInput === "×" || lastInput === "÷"){
+        } else if(flag === true && lastInput === "+" || lastInput === "-" || lastInput === "×" || lastInput === "÷"){
             flag = false;
             display.innerHTML += e.target.innerHTML;
         } else {
